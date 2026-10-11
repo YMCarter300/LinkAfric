@@ -107,9 +107,10 @@ h1 span, .gold { color: var(--gold); }
   background:linear-gradient(135deg, rgba(245,181,27,.10), rgba(255,255,255,.035));
   border-radius:24px; padding:36px; position:relative; overflow:hidden;
 }
-.edu::after { content:"EDU"; position:absolute; right:-10px; bottom:-38px; font-size:10rem; font-weight:900; color:rgba(255,255,255,.025); }
+.edu::after { content:"EDU"; position:absolute; right:-10px; bottom:-38px; font-size:10rem; font-weight:900; color:rgba(255,255,255,.025); pointer-events: none;}
 .edu h3 { font-size:2rem; }
 .edu p { color:var(--muted); max-width:680px; margin:12px 0 20px; }
+.edu .btn { position: relative; z-index: 1; }
 
 .contact-box { display:grid; grid-template-columns: .9fr 1.1fr; gap:28px; }
 .contact-details { display:grid; gap:14px; }
